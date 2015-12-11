@@ -28,7 +28,7 @@ public class seltesting {
 		   driver.findElement(By.id("Email")).sendKeys("khan.erfan88@gmail.com");
 		   driver.findElement(By.id("next")).click();
 		   driver.findElement(By.id("Passwd")).clear();
-		   driver.findElement(By.id("Passwd")).sendKeys("Tahena_bushra");
+		   driver.findElement(By.id("Passwd")).sendKeys("mypwd");
 		   driver.findElement(By.id("signIn")).click();
 		   
 		   driver.findElement(By.xpath("//div[@id=':it']/div/div")).click();
