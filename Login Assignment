@@ -40,7 +40,7 @@ public class seltesting {
 		   
 		   driver.findElement(By.id(":lv")).sendKeys("Name : Erfan Khan "
 		   		+ "/nContact No : 9823727472"
-				+ "/nGithub link : ");
+				+ "/nGithub link : https://github.com/khanerfan/Assignment-Code.git");
 		   
 		   driver.findElement(By.id("n7")).click();
 		   
