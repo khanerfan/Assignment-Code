@@ -15,34 +15,35 @@ public class seltesting {
 		  @Before
 		  public void setUp() throws Exception {
 		    driver = new FirefoxDriver();
-		    baseUrl = "https://mail.google.com/";
+		    baseUrl ="https://mail.google.com";
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  }
 		  
 		  @Test
 		  public void selTesting() throws Exception
 		  {
-		   driver.get(baseUrl);
+			  
+		  driver.get(baseUrl);
 		   driver.findElement(By.id("Email")).clear();
 		   driver.findElement(By.id("Email")).sendKeys("khan.erfan88@gmail.com");
 		   driver.findElement(By.id("next")).click();
 		   driver.findElement(By.id("Passwd")).clear();
-		   driver.findElement(By.id("Passwd")).sendKeys("mypwd");
+		   driver.findElement(By.id("Passwd")).sendKeys("Tahena_bushra");
 		   driver.findElement(By.id("signIn")).click();
 		   
 		   driver.findElement(By.xpath("//div[@id=':it']/div/div")).click();
 		   
-		   driver.findElement(By.id(":om")).sendKeys("hiring@coriolis.co.in");
-		   driver.findElement(By.id(":lq")).click();
-		   driver.findElement(By.id(":on")).sendKeys("shrikant.katkojwar@coriolis.co.in");
+		   driver.findElement(By.id(":oh")).sendKeys("hiring@coriolis.co.in");
+		   driver.findElement(By.id(":oh")).click();
+		   driver.findElement(By.id(":oh")).sendKeys("shrikant.katkojwar@coriolis.co.in");
 		   
-		   driver.findElement(By.id(":o7")).sendKeys("Assignment");
+		   driver.findElement(By.id(":o2")).sendKeys("Assignment");
 		   
-		   driver.findElement(By.id(":lv")).sendKeys("Name : Erfan Khan "
+		   driver.findElement(By.id(":lq")).sendKeys("Name : Erfan Khan "
 		   		+ "/nContact No : 9823727472"
 				+ "/nGithub link : https://github.com/khanerfan/Assignment-Code.git");
 		   
-		   driver.findElement(By.id("n7")).click();
+		   driver.findElement(By.id("n2")).click();
 		   
 		  }
 
@@ -54,5 +55,3 @@ public class seltesting {
 		  
 
 	}
-
-
